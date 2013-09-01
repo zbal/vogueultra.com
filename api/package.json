@@ -1,0 +1,30 @@
+{
+  "author": {
+    "name": "Vincent Viallet",
+    "email": "vincent.viallet@gmail.com",
+    "url": "https://github.com/zbal"
+  },
+  "name": "vogueultra",
+  "description": "vogueultra API",
+  "version": "0.0.1",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zbal/vogueultra.com"
+  },
+  "url": "https://github.com/zbal/vogueultra.com",
+  "dependencies": {
+    "async": "*",
+    "express": "*",
+    "stash": "*"
+  },
+  "devDependencies": {
+    "mocha": "1.x",
+    "request": "2.x",
+    "should": "1.x",
+    "nodemon": "*"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./test/*.mocha.js"
+  }
+}

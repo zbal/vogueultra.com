@@ -1,4 +1,6 @@
 .*
 *~
 *swp
+*log
+node_modules
 !.gitignore

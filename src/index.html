@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang='en' ng-app='vogueultra' ng-controller='vuCtrl'>
+<head>
+  <meta charset='utf-8'>
+
+  <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
+  <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
+
+  <!-- compiled CSS --><% scripts.forEach( function ( file ) { %>
+  <script type="text/javascript" src="<%= file %>"></script><% }); %>
+
+  <title ng-bind="$state.current.name + ' - Vogue Ultra'">Vogue Ultra</title>
+</head>
+<body>
+
+  <ng-include src="'navbar/navbar.tpl.html'"  ng-controller='NavbarCtrl' ng-show='isLogged'></ng-include>
+
+  <div ui-view></div>
+
+  <!-- Global Notification section -->
+  <div id='notifications' ng-show='globalMsg'>
+    <p class='{{globalMsg.type}}'>{{ globalMsg.data }}</p>
+  </div>
+
+</body>
+</html>

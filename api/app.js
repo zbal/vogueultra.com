@@ -34,8 +34,6 @@ app.post('/products', function(req, res){
         console.log('Conflict - already existing model', id);
         return res.send(409);
     }
-
-    delete req.body.id
     stash_products.set(id, req.body, function(err){
         if (err) {
             console.log('error:', err);
@@ -51,7 +49,6 @@ app.put('/products/:id', function(req, res){
         console.log('Missing model', req.params.id);
         return res.send(404);
     }
-    if (req.body.id) delete req.body.id
     stash_products.set(req.params.id, req.body, function(err){
         if (err) {
             console.log('error:', err);

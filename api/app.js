@@ -1,4 +1,5 @@
 var express = require('express');
+var _ = require('underscore');
 var app = express();
 var stash_products = require('stash')('products');
 
@@ -74,6 +75,28 @@ app.del('/products/:id', function(req, res){
         console.log('successfully removed', req.params.id);
         return res.json({message: 'success'});
     });
+});
+
+app.get('/collections/:name', function(req, res){
+    var full_products = stash_products.list()
+    var products = _.filter(full_products, function(product){
+        if (product['collection'] && product['collection'] == req.params.name) {
+            return true;
+        }
+        return false;
+    });
+    return res.json(products)
+});
+
+app.get('/categories/:name', function(req, res){
+    var full_products = stash_products.list()
+    var products = _.filter(full_products, function(product){
+        if (product['categories'] && _.indexOf(product['categories'], req.params.name) != -1) {
+            return true;
+        }
+        return false;
+    });
+    return res.json(products)
 });
 
 app.listen(3000);

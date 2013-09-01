@@ -16,6 +16,7 @@
   "dependencies": {
     "async": "*",
     "express": "*",
+    "underscore": "*",
     "stash": "*"
   },
   "devDependencies": {

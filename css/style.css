@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "DIN";
+  src: url('/assets/css/DIN.ttf');
+}
+
+html ,
+body {
+  background: #000;
+  text-align: center;
+  font-family: 'DIN', arial, serif;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+}
+
+div.container {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
+  vertical-align: middle;
+  color: #fff;
+}
+
+a {
+  color: #ff00ff;
+  text-decoration: none;
+}

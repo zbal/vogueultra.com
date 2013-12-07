@@ -9,10 +9,7 @@
   },
   "devDependencies": {
     "angular": "*",
-    "angular-mocks": "*",
-    "angular-ui-router": "*",
-    "angular-highlightjs": "*",
-    "angular-ui-select2": "*",
-    "jquery": "*"
+    "angular-route": "*",
+    "swipe": "*"
   }
 }

@@ -12,7 +12,7 @@ angular.module('vogueultra', ['ngRoute'])
     })
     .when('/article/:articleId', {
       controller: 'ArticleCtrl',
-      templateUrl: 'Article.html'
+      templateUrl: 'article.html'
     })
     .when('/blog', {
       controller: 'BlogCtrl',

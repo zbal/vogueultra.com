@@ -1,7 +1,7 @@
 angular.module('vogueultra', ['ngRoute'])
 
-.config(function($route) {
-  $route
+.config(function($routeProvider) {
+  $routeProvider
     .when('/', {
       controller: 'HomeCtrl',
       templateUrl: 'home.html'

@@ -1,14 +1,3 @@
-window.mySwipe = Swipe(document.getElementById('slider'), {
-  startSlide: 2,
-  speed: 400,
-  auto: 3000,
-  continuous: true,
-  disableScroll: false,
-  stopPropagation: false,
-  callback: function(index, elem) {},
-  transitionEnd: function(index, elem) {}
-});
-
 angular.module('vogueultra', ['ngRoute'])
 
 .config(function($routeProvider) {
@@ -35,7 +24,16 @@ angular.module('vogueultra', ['ngRoute'])
 })
 
 .controller('HomeCtrl', function($scope, $location, $routeParams) {
-
+  window.mySwipe = Swipe(document.getElementById('slider'), {
+    startSlide: 2,
+    speed: 400,
+    auto: 3000,
+    continuous: true,
+    disableScroll: false,
+    stopPropagation: false,
+    callback: function(index, elem) {},
+    transitionEnd: function(index, elem) {}
+  });
 })
 
 .controller('CollectionCtrl', function($scope, $location, $routeParams) {

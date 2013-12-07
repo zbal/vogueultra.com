@@ -43,6 +43,13 @@ a {
 }
 .swipe-wrap > div {
   float:left;
-  width:100%;
+  width:50%;
   position: relative;
 }
+.left {
+  float: left;
+}
+
+.navbar .divider-vertical {margin: 0}
+.navbar .nav > li > a {padding: 10px 23px 11px 20px;}
+

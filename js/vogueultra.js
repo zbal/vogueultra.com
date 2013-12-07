@@ -43,14 +43,14 @@ angular.module('vogueultra', ['ngRoute'])
 })
 
 .controller('ArticleCtrl', function($scope, $location, $routeParams) {
-  if ($routeParams.ArticleId == '1') {
+  if ($routeParams.articleId == '1') {
     $scope.article = {
       id: 1, 
       name: 'article 1', 
       description: 'Awesome article in collection 1'
     }
   }
-  else if ($routeParams.ArticleId == '2') {
+  else if ($routeParams.articleId == '2') {
     $scope.article = {
       id: 2, 
       name: 'article 2', 

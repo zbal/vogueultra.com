@@ -25,11 +25,11 @@ div.container {
   margin-right: auto;
   min-height: 100%;
   vertical-align: middle;
-  color: #fff;
+  /*color: #fff;*/
 }
 
 a {
-  color: #ff00ff;
+  /*color: #ff00ff;*/
   text-decoration: none;
 }
 .swipe {
@@ -53,3 +53,9 @@ a {
 .navbar .divider-vertical {margin: 0}
 .navbar .nav > li > a {padding: 10px 23px 11px 20px;}
 
+.clear-navbar {
+  margin-top: 60px;
+}
+.row {
+  margin-left: -20px;
+}

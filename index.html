@@ -1,15 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="vogueultra">
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title>Vogue Ultra</title>
     <link href="/css/style.css" rel="stylesheet" type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js"></script>
+    <script src="/js/vogueultra.js"></script>
   </head>
-  <body>
-    <div class="container">
-      <img src="/images/vogueultra.jpg" alt="Vogue Ultra" class="center"/>
-      <p>Coming soon...</p>
-      <p>For any information contact <a href="mailto:info@vogueultra.com">info@vogueultra.com</a>.</p>
-    </div>
+  <body ng-controller="VogueCtrl" class="ng-scope">
+    <header class="header">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="brand" href="http://vogueultra.com" style="padding-top: 6px; padding-bottom: 0px;">
+              <img class="VogueUltra-small" src="img/VogueUltra-small.png">
+            </a>
+            <ul class="nav">
+              <li class="divider-vertical"></li>
+              <li>
+                <a href="/collection/vogueultra">
+                  <i class="icon-vogueultra icon-white"></i>
+                  " VogueUltra collection"
+                </a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li>
+                <a href="/collection/designers">
+                  <i class="icon-designers icon-white"></i>
+                  " Designers collection"
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div ng-view class="container"></div>
+    <footer class="footer">
+      <div class="navbar navbar-fixed-bottom">
+        <div class="navbar-inner">
+          <div class="container">
+            <ul class="nav">
+              <li class="divider-vertical"></li>
+              <li>
+                <a href="/about">
+                  <i class="icon-about icon-white"></i>
+                  " About VogueUltra"
+                </a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li>
+                <a href="/blog">
+                  <i class="icon-blog icon-white"></i>
+                  " Blog"
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
